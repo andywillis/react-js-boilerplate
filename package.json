@@ -1,0 +1,26 @@
+{
+  "name": "vanilla-js-boilerplate",
+  "root": true,
+  "private": true,
+  "type": "module",
+  "version": "0.0.1",
+  "scripts": {
+    "dev": "concurrently \"pnpm run clientdev\" \"pnpm test\"",
+    "clientdev": "pnpm --filter client run dev",
+    "serverdev": "pnpm --filter server run dev",
+    "devall": "concurrently \"pnpm run serverdev\" \"pnpm run clientdev\"",
+    "build": "pnpm --filter client run build",
+    "test": "pnpm --filter client run test",
+    "snyk": "snyk test --all-projects"
+  },
+  "license": "CC-BY-NC-SA-4.0",
+  "devDependencies": {
+    "@babel/eslint-parser": "^7.18.9",
+    "@babel/plugin-syntax-import-assertions": "^7.18.6",
+    "concurrently": "^7.4.0",
+    "eslint": "^8.23.0",
+    "eslint-config-airbnb-base": "15.0.0",
+    "eslint-plugin-import": "^2.26.0",
+    "vitest": "^0.23.2"
+  }
+}

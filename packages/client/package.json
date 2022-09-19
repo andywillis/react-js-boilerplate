@@ -1,0 +1,31 @@
+{
+  "name": "client",
+  "private": true,
+  "version": "0.0.1",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "test": "vitest --watch"
+  },
+  "dependencies": {
+    "classnames": "^2.3.1",
+    "open-props": "^1.4.14",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "@types/react": "^18.0.18",
+    "@types/react-dom": "^18.0.6",
+    "@vitejs/plugin-react": "1.3.2",
+    "eslint-config-airbnb": "^19.0.4",
+    "eslint-plugin-jsx-a11y": "^6.5.1",
+    "eslint-plugin-react": "^7.28.0",
+    "eslint-plugin-react-hooks": "^4.3.0",
+    "typescript": "^4.6.4",
+    "vite": "^3.1.0",
+    "vite-plugin-compression": "^0.5.1"
+  },
+  "license": "CC-BY-NC-SA-4.0"
+}
